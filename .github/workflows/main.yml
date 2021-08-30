@@ -34,7 +34,7 @@ jobs:
         git checkout 16dab5225bf4c95baae3733f05b6e4b0e1c9aae9
     - name: Build 
       run: |
-        cd ~/droidboot_device_volla_yggdrasil
+        cd ~/lk-bootloader
         make TOOLCHAIN_PREFIX=~/toolchain/bin/arm-linux-androideabi- k63v2_64_bsp 
     - name : Upload boot image
       uses: actions/upload-artifact@master
