@@ -35,7 +35,7 @@ jobs:
     - name: Build 
       run: |
         cd ~/lk-bootloader
-        make TOOLCHAIN_PREFIX=~/toolchain/bin/arm-linux-androideabi- k63v2_64_bsp 
+        make TOOLCHAIN_PREFIX=~/toolchain/bin/arm-linux-androideabi- k50sv1_64_bsp
     - name : Upload boot image
       uses: actions/upload-artifact@master
       with:
